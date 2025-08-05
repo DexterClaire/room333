@@ -3,18 +3,30 @@
 <head>
   <style>
     body {
-      margin-top: 80px
+      margin: 0;
     }
+
     @keyframes blink {
       50% { opacity: 0; }
+    }
+
+    .blinking-text {
+      color: red;
+      font-family: Impact, sans-serif;
+      font-size: 18vw; /* Responsive to screen width */
+      animation: blink 0.3s step-start infinite;
+      white-space: nowrap;
+    }
+
+    .container {
+      text-align: center;
+      overflow: hidden;
     }
   </style>
 </head>
 <body>
-  <div style="text-align:center;">
-    <span style="color:red; font-size:620px; font-family:Impact; animation:blink 0.3s step-start infinite;">
-      PHOEBE
-    </span>
+  <div class="container">
+    <span class="blinking-text">PHOEBE</span>
   </div>
 </body>
 </html>
