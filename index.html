@@ -5,22 +5,19 @@
     body {
       margin: 0;
     }
-
     @keyframes blink {
       50% { opacity: 0; }
     }
-
     .blinking-text {
       color: red;
       font-family: Impact, sans-serif;
-      font-size: 18vw; /* Responsive to screen width */
+      font-size: 14vw;  /* Adjust this number to get near-full width */
       animation: blink 0.3s step-start infinite;
       white-space: nowrap;
+      overflow: hidden;
     }
-
     .container {
       text-align: center;
-      overflow: hidden;
     }
   </style>
 </head>
